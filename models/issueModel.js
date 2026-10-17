@@ -9,6 +9,7 @@ const IsssueSchema = new Schema({
     },
     description: {
         type: String,
+        default: "",
     },
     status: {
         type: String,

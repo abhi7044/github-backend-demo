@@ -5,7 +5,7 @@ const Issues = require("../models/issueModel");
 
 
 async function createIssue(req, res) {
-    const { title, description } = req.body;
+    const { title, description, repository } = req.body;
     const { id } = req.params;
 
     try{
@@ -99,11 +99,25 @@ async function getIssueById(req, res) {
         res.status(500).send("Server error");
     }
 };
+async function getIssuesByRepo(req, res) {
+  const { repoId } = req.params;
+  try {
+    if (!mongoose.Types.ObjectId.isValid(repoId)) {
+      return res.status(400).json({ error: "Invalid repository id" });
+    }
+    const issues = await Issue.find({ repository: repoId }).sort({ createdAt: -1 });
+    res.json({ issues });
+  } catch (err) {
+    console.error("Error during fetching repo issues: ", err.message);
+    res.status(500).json({ error: "Server error" });
+  }
+}
 
 module.exports = {
     createIssue,
     updateIssueById,
     deleteIssueById,
     getAllIssues,
+    getIssuesByRepo,
     getIssueById
 }
