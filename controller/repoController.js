@@ -81,14 +81,15 @@ async function fetchRepositoryByName(req, res) {
 }
 
 async function fetchRepositoriesForCurrentUser(req, res) {
-  const { userId } = req.params;
-  try {
-    const repositories = await Repository.find({ owner: userId });
-    res.json({ message: "Repositories found!", repositories });
-  } catch (err) {
-    console.error("Error during fetching user repositories: ", err.message);
-    res.status(500).send("Server error");
-  }
+    const { userId } = req.params;
+
+    try {
+        const repositories = await Repository.find({ owner: userId });
+        res.json({ message: "Repositories found!", repositories });
+    } catch (err) {
+        console.error("Error during fetching user repositories : ", err.message);
+        res.status(500).send("Server error");
+    }
 }
 
 async function updateRepositoryById(req, res) {
