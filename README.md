@@ -7,14 +7,15 @@
 [🚀 Live Demo](https://main.d1jwxcdr5bwis6.amplifyapp.com/) · [🎥 Demo Video](https://youtu.be/K1VGrIL52ZQ) · [🖥️ Frontend Repo](https://github.com/abhi7044/aws-frontend-demo)
 
 ![Login API response](screenshots/api-login.png)
+
 ![CLI](screenshots/cli-demo.png)
-![Architecture](```mermaid
+
+```mermaid
 flowchart LR
   A[React app<br/>AWS Amplify] -->|REST + JWT| B[Express API<br/>AWS EC2 + PM2]
   B --> C[(MongoDB)]
   B --> D[(AWS S3<br/>mini Git commits)]
-```)
-
+```
 </div>
 
 ---
