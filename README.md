@@ -147,6 +147,6 @@ To ship a change: `git push` → on the server run `git pull` and `pm2 restart g
 
 <div align="center">
 
-Built by **Abhijeet Mishra** · [GitHub](https://github.com/abhi7044) · [LinkedIn](PASTE_LINKEDIN_LINK_HERE)
+Built by **Abhijeet Mishra** · [GitHub](https://github.com/abhi7044) · [LinkedIn](https://www.linkedin.com/in/abhijeet-mishra-140aa3353)
 
 </div>
