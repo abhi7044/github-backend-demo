@@ -6,11 +6,14 @@
 
 [🚀 Live Demo](https://main.d1jwxcdr5bwis6.amplifyapp.com/) · [🎥 Demo Video](https://youtu.be/K1VGrIL52ZQ) · [🖥️ Frontend Repo](https://github.com/abhi7044/aws-frontend-demo)
 
-![Node.js](https://img.shields.io/badge/Node.js-339933?logo=nodedotjs&logoColor=white)
-![Express](https://img.shields.io/badge/Express-000000?logo=express&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white)
-![JWT](https://img.shields.io/badge/JWT-000000?logo=jsonwebtokens&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS_EC2_+_S3-FF9900?logo=amazonaws&logoColor=white)
+![Login API response](screenshots/api-login.png)
+![CLI](screenshots/cli-demo.png)
+![Architecture](```mermaid
+flowchart LR
+  A[React app<br/>AWS Amplify] -->|REST + JWT| B[Express API<br/>AWS EC2 + PM2]
+  B --> C[(MongoDB)]
+  B --> D[(AWS S3<br/>mini Git commits)]
+```)
 
 </div>
 
