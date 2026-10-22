@@ -4,7 +4,7 @@
 
 **REST API + a tiny Git of its own. Handles users, JWT login, repositories, issues and a CLI version-control system.**
 
-[🚀 Live Demo](https://main.d1jwxcdr5bwis6.amplifyapp.com/) · [🎥 Demo Video](https://youtu.be/K1VGrIL52ZQ) · [🖥️ Frontend Repo](https://github.com/abhi7044/aws-frontend-demo)
+[🚀 Live Demo](https://main.d1jwxcdr5bwis6.amplifyapp.com/) · [🎥 Demo Video](https://youtu.be/NFfr9OUaOo0) · [🖥️ Frontend Repo](https://github.com/abhi7044/aws-frontend-demo)
 
 ![Login API response](screenshots/api-login.png)
 
@@ -18,6 +18,7 @@ flowchart LR
 ```
 </div>
 
+> ⚠️ **Note:** If login does not work, the server may be offline. Please watch the demo video.
 ---
 
 ## ✨ What it does
